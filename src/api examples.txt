@@ -1,0 +1,11 @@
+routes:
+`https://api-v3.mbta.com/routes/{routeId}` (ex `https://api-v3.mbta.com/routes/Red` OR `https://api-v3.mbta.com/routes` for all of the routes)
+
+alerts info:
+`https://api-v3.mbta.com/alerts?filter[route]={routeId}` (ex `https://api-v3.mbta.com/alerts?filter[route]=Green-A`)
+filter to stops:
+`https://api-v3.mbta.com/alerts?filter[route]={routeId}&filter[stop]={comma seperated list of placeIds}` (ex `https://api-v3.mbta.com/alerts?filter[route]=Red&filter[stop]=place-pktrm,place-chmnl,place-knncl`)
+
+stops:
+`https://api-v3.mbta.com/stops`
+filter by route: `https://api-v3.mbta.com/stops?filter[route]=Red`
